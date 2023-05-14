@@ -96,7 +96,6 @@
 
 
 
-
 <!-- <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
   <label class="form-check-label" for="flexCheckChecked">
@@ -234,16 +233,34 @@ var arrayTelecom  = new Array();
 var obj_length = document.getElementsByName("gender").length;
 var obj_length2 = document.getElementsByName("telecom").length;
 
+/*
+for (var i=0; i<obj_length; i++) {
+   if ($("input[name=gender]")[i].prop("checked", true)) {
+      alert($("input[name=gender]")[i].val());
+      arrayGender.push($("input[name=gender]")[i].val());
+   }
+}
+*/
+
+for (var i = 0; i < obj_length; i++) {
+   if ($("input[name='gender']").eq(i).is(":checked")) {
+      alert($("input[name='gender']").eq(i).val());
+      arrayGender.push($("input[name='gender']").eq(i).val());
+   }
+}
+
+/*
+
 for (var i=0; i<obj_length; i++) {
 	if (document.getElementsByName("gender")[i].checked == true) {
 		alert (document.getElementsByName("gender")[i].value);
 		arrayGender.push(document.getElementsByName("gender")[i].value);
 	}
-}
+}*/
 /* document.getElementsByName("gender")[0].checked = false;
 document.getElementsByName("gender")[1].checked = true;
 document.getElementById("mw").checked = true; */
-
+/*
 $("#woman").prop("checked",false);
 $("#mw").prop("checked",true);
 
@@ -263,7 +280,7 @@ for (var i = 0; i<arrayTelecom.length; i++){
 	console.log(arrayTelecom[i]);
 }
 
-
+*/
 
 		
 });

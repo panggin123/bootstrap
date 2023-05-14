@@ -78,12 +78,17 @@
 $("#btn").on("click",function(){
 	
 
-alert(document.querySelector("input[name='gender']:checked").value);
+/*alert(document.querySelector("input[name='gender']:checked").value);*/
 
 /* document.getElementsByName("gender")[1].checked = true; */
-document.getElementById("mw").checked = true;
+/*document.getElementById("mw").checked = true;*/
 
 /* alert(document.querySelector("input[name='telecom']:checked").value); */
+
+
+
+alert($("input[name='gender']:checked").val());
+$("#mw").prop("checked",true);
 
 });
 
