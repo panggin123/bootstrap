@@ -31,11 +31,12 @@
     
 <script type="text/javascript">
     
-$("#country").on("change",function(){
-/* $("#btn").on("click",function(){ */
+/*
+	$("#country").on("change",function(){
+/* $("#btn").on("click",function(){ 
     	
 	
-	/* alert($("#country").val()); */
+	alert($("#country").val()); 
 alert("country: " + $("#country").val()); 
 
 $("#country").val("1").prop("selected",true);
@@ -44,9 +45,19 @@ alert("country: " + $("#country").val());
 	
 
 });
-	
-	
-    	
+*/
+
+
+
+    	document.getElementById("country").addEventListener("change", function() {
+    // alert($("#country").val());
+    alert("country: " + document.getElementById("country").value);
+
+    document.getElementById("country").value = "1";
+    document.getElementById("country").selected = true;
+
+    alert("country: " + document.getElementById("country").value);
+});
     
     	
  
