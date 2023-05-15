@@ -33,7 +33,7 @@
     
 /*
 	$("#country").on("change",function(){
-/* $("#btn").on("click",function(){ 
+ $("#btn").on("click",function(){ 
     	
 	
 	alert($("#country").val()); 
@@ -45,11 +45,11 @@ alert("country: " + $("#country").val());
 	
 
 });
-*/
+ */
 
 
 
-    	document.getElementById("country").addEventListener("change", function() {
+    document.getElementById("country").addEventListener("change", function() {
     // alert($("#country").val());
     alert("country: " + document.getElementById("country").value);
 
@@ -58,10 +58,18 @@ alert("country: " + $("#country").val());
 
     alert("country: " + document.getElementById("country").value);
 });
-    
-    	
- 
-    
+
+ /*	
+$("country").addEventListener("change",function(){
+	alert("country: " +$("country").value);
+	
+	$("country").value = "4"
+	$("country").selected = true;
+	alert("country: " + $("country").value);
+	
+	
+	}) 
+*/
     
     
     
